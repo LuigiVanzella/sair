@@ -5,56 +5,175 @@
 
     <title>Academia IFSP</title>
  
-</head>
-<body style="background-image: url(textura-com-uma-cor-neutra-80418343\ \(1\).jpg)"> 
-    <p style="color: red;"> Você saiu da sua conta com sucesso</p>
-    <h1>Academia IFSP</h1> 
-       
-        <form>
-            <fieldset>
-        <h4>Faça login Aqui</h4>
-        <form style="width: 100px;">
-            <label for="matricula">E-mail de login:</label>
-            <input type="text" name="matricula" id="matricula" placeholder="Coloque sua matricula">
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha" placeholder="Coloque sua senha">
-            <button><a href="https://luigivanzella.github.io/modalidade/">Entrar</a></button>
-        </form>
-            </fieldset>
-        </form>
-    
-        <br>
-        <button><a href="https://luigivanzella.github.io/cadastro/">Cadastre-se</a></button>
-        <br>
-   
-    <br>
-   
-    <p>Bem Vindo ao site da Academia IFSP. <br>
-        A Academia IFSP é referência na cidade de São Carlos desde a década de 1980, quando iniciou sua atuação como Academia do Parque, se transformando posteriormente na atual Academia IFSP. São décadas de luta e de comprometimento do nosso TIME em melhorar a qualidade de vida, tanto física, quanto social e emocional de nossos alunos, ou melhor dizendo, amigos.
+    <style>
+        p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #cabeca{
+            background-color: rgba(0, 0, 0, 0.801);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            height: 80px;
+            margin-bottom: 5px;
+            padding:8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #cabeca > a{
+            text-decoration: none;
+            color: white;
+            width: 500px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h4{
+            margin-top:0px;
+            margin-bottom: 0px;
+            color: red;
+            font-size: 15px;
+        }
 
-        A Academia IFSP é reconhecida como uma academia FAMÍLIA, onde os alunos não vão somente para exercitar o corpo, mas para reencontrar amigos e divertir-se com os professores e colegas de atividades, sejam elas na musculação, na sala de ginástica ou no lobby da academia.
+        #itens{
+            margin-right: 40px;
+            margin-top: 25px;
+        }
+        #itens a{
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #cabeca h1{
+            margin-left: 3%;
+        }
+
+        article{
+            display: flex;
+            flex-direction: row;
+        }
+        #conteudo{
+            width: 70%;
+            text-align: justify;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.801);
+            padding: 10px;
+        }
+        #direita{
+            background-color: rgba(0, 0, 0, 0.801);
+            margin-left: auto;
+            width: 350px;
+            height: 600px;
+            z-index: 1;
+            position:sticky;
+            top: 5px;
+        }
+
+        #direita > button{
+            margin-top: 50px;
+            margin-left: 70px;
+            background: #0067a200;
+            color: white;
+            border-style:outset;
+            border-color: #ffffff;
+            height: 40px;
+            width: 200px;
+            font-size: 15px;
+            position:sticky;
+        }
+
+        #direita > button:hover{
+            background-color: black;
+            font-size: 16px;
+        }
+
+        #direita a{
+            text-decoration: none;
+            color: #ffffff;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #direita > form{
+            margin-left: 70px;
+            margin-top: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position:sticky;
+        }
+        #direita input{
+            border-radius: 2px;
+            width: 190px;
+            height: 25px;
+            margin-bottom: 8px;
+            position:sticky;
+        }
+        #direita form > button{
+            margin-left: 5px;
+            background: #0067a200;
+            color: white;
+            border-style:outset;
+            border-color: #ffffff;
+            height: 35px;
+            width: 190px;
+            font-size: 15px;
+            position:sticky;
+        }
+        #direita form > button:hover{
+            background-color: black;
+            font-size: 16px;
+        }
+        img{
+            width: 40%;
+        }
         
-        A academia IFSP tem como missão oferecer os melhores recursos e condições para que os clientes possam se relacionar com o exercício físico, buscando o comprometimento com a regularidade, a partir de uma prática eficaz, segura e prazerosa, visando ser uma referência em musculação e ginástica na cidade de São Carlos e no estado de São Paulo, primando pela excelência dos serviços prestados através do comprometimento de toda a sua equipe na busca da fidelização com seu cliente. <br><br>
+
+    </style>
+</head>
+<body style="background-image: url(imagemdefundo\ academia.jpeg)"> 
+    <h4>Você saiu da conta com sucesso</h4>
+    <div id="cabeca">
+        <a href="https://luigivanzella.github.io/Inicio/"><h1>ACADEMIA IFSP</h1></a>
+        <div id="itens">
+            <a href="https://luigivanzella.github.io/modalidade/">MODALIDADE</a>
+            <a href="https://luigivanzella.github.io/matricula/">MATRICULA</a>
+            <a href="https://luigivanzella.github.io/relatorio/">RELATORIO</a>
+
+        </div>
+    </div>
+    <article>
+        <div id="conteudo">
+            <p style="font-size: 25px;">Bem Vindo ao site da Academia IFSP.</p>
+            <p>
+                A Academia IFSP é referência na cidade de São Carlos desde a década de 1980, quando iniciou sua atuação como Academia do Parque, se transformando posteriormente na atual Academia IFSP. São décadas de luta e de comprometimento do nosso TIME em melhorar a qualidade de vida, tanto física, quanto social e emocional de nossos alunos, ou melhor dizendo, amigos.
         
-        Venha fazer parte desta família você também!
-    </p>
-    
-    <br><br>
-   <center><p>Estas fotos são a nossa Academia que esta na sua disposição!!</p></center>
-    <center>
-        <img src="escolher-a-melhor-academia.jpg" alt="" style="width: 360px;  height: 300px;">
-        <img src="halteres-em-uma-academia-efeito-flare_53419-9742.webp" alt="" style="width: 360px;  height: 300px;">
-        <img src="homem-forte-treinando-na-academia_1303-23478.webp" alt="" style="width: 360px;  height: 300px;"><br>
-        <img src="md_d94c1a42-f70f-4573-ad99-335b8dec2f75_aaadceaaebbdWhatsAppImageat...webp" alt="" style="width: 350px;  height: 450px;">
-        <img src="mulher-fazendo-exercicios-de-hiperextensao-na-academia_7502-9065.webp" alt="" style="width: 350px;  height: 450px;">
-        <img src="índice.jpg" alt="" style="width: 380px;  height: 450px;">
-    </center>
-    <hr>
-    <button>listar tudo</button>
-    <button>listar apenas um</button>
-    <button>alterar</button>
-    <button>excluir</button>
-   
-    
+                A Academia IFSP é reconhecida como uma academia FAMÍLIA, onde os alunos não vão somente para exercitar o corpo, mas para reencontrar amigos e divertir-se com os professores e colegas de atividades, sejam elas na musculação, na sala de ginástica ou no lobby da academia.
+                
+                A academia IFSP tem como missão oferecer os melhores recursos e condições para que os clientes possam se relacionar com o exercício físico, buscando o comprometimento com a regularidade, a partir de uma prática eficaz, segura e prazerosa, visando ser uma referência em musculação e ginástica na cidade de São Carlos e no estado de São Paulo, primando pela excelência dos serviços prestados através do comprometimento de toda a sua equipe na busca da fidelização com seu cliente. <br><br>
+                
+                Venha fazer parte desta família você também!
+            </p>
+            
+            <br><br>
+        <p>Estas fotos são a nossa Academia!!</p>
+            
+            <img src="escolher-a-melhor-academia.jpg" alt="">
+            <img src="halteres-em-uma-academia-efeito-flare_53419-9742.webp" alt="">
+            <img src="homem-forte-treinando-na-academia_1303-23478.webp" alt=""><br>
+            <img src="md_d94c1a42-f70f-4573-ad99-335b8dec2f75_aaadceaaebbdWhatsAppImageat...webp" alt="" >
+            <img src="mulher-fazendo-exercicios-de-hiperextensao-na-academia_7502-9065.webp" alt="" >
+            <img src="índice.jpg" alt="">
+            
+            
+        </div>
+        <div id="direita">
+            <button><a href="https://luigivanzella.github.io/cadastro/">Cadastre-se</a></button>
+            <hr width="300px">
+            <form>
+                <p style="font-size: 20px; color: #ffffff;">Já estou cadastrado</p>
+                <label for="matricula"></label>
+                <input type="text" name="matricula" id="matricula" placeholder="E-mail"><br>
+                <label for="senha"></label>
+                <input type="password" name="senha" id="senha" placeholder="Senha"><br>
+                <button><a href="https://luigivanzella.github.io/modalidade/">Entrar</a></button>
+            </form>
+        </div>
+    </article>
 </body>
 </html>
